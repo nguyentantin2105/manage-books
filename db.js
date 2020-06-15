@@ -4,6 +4,6 @@ var adapter = new FileSync('db.json');
 var db = low(adapter);
 
 // our default array of dreams
-db.defaults({ books: [], users: [], transactions: [] }).write();
+db.defaults({ books: [], users: [], transaction: [] }).write();
 
 module.exports = db;
