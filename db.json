@@ -1,0 +1,74 @@
+{
+  "books": [
+    {
+      "id": "f232d",
+      "title": "python",
+      "describe": "lap trinh python"
+    },
+    {
+      "id": "VYurSNquc",
+      "title": "c++",
+      "describe": "lap trinh c++"
+    },
+    {
+      "id": "2xR1EsMJQ",
+      "title": "html",
+      "describe": "lap trinh html"
+    },
+    {
+      "id": "acGDyW5-L",
+      "title": "angular",
+      "describe": "lap trinh angular"
+    }
+  ],
+  "users": [
+    {
+      "id": "F123A",
+      "name": "tin",
+      "CMND": "231143393"
+    },
+    {
+      "id": "IJzcQP0Nb",
+      "name": "tien",
+      "cmnd": "23412312"
+    },
+    {
+      "id": "0_3pUoN3U",
+      "name": "son",
+      "cmnd": "2342341234\\"
+    },
+    {
+      "id": "bfMb7a2IW",
+      "name": "sang",
+      "cmnd": "2342303123"
+    }
+  ],
+  "transaction": [
+    {
+      "id": "fa23v",
+      "userid": "F123A",
+      "bookid": "f232d"
+    },
+    {
+      "id": "MaKoyPQ_4",
+      "userid": "F123A",
+      "bookid": "f232d"
+    },
+    {
+      "id": "Hm0OBQkQU",
+      "userid": "0_3pUoN3U",
+      "bookid": "2xR1EsMJQ"
+    },
+    {
+      "id": "_LUZSTU7o",
+      "userid": "IJzcQP0Nb",
+      "bookid": "VYurSNquc"
+    },
+    {
+      "id": "uDhz3kdfh",
+      "userid": "F123A",
+      "bookid": "VYurSNquc"
+    }
+  ],
+  "transactions": []
+}

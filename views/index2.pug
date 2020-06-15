@@ -1,0 +1,7 @@
+h1 ListTransactions
+ul 
+  each transaction in listTransactions
+    li=  'Userid= ' + transaction.userid + ' | ' + 'Bookid= ' + transaction.bookid
+    
+a(href='/transactions/create') Create Transaction
+br
