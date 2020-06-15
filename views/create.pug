@@ -1,0 +1,14 @@
+form(action="/transactions/create", method="POST")
+  label Select user: &nbsp
+  select(name='userid')
+    each user in users
+      option(value=user.id)= user.name
+  br
+  br
+  label Select book: &nbsp
+  select(name='bookid')
+    each book in books
+      option(value=book.id)= book.title
+  br
+  br
+  button Create
