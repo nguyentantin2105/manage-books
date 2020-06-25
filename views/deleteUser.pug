@@ -1,6 +1,9 @@
-h1 DELETE USER
-form(action="/users/delete", method="POST")
-  label Input User Name 
-  input(type="text", name="name")
-  br
-  button Delete
+extends ./layouts/Main
+
+block content
+  h1 DELETE USER
+  form(action="/users/delete", method="POST")
+    label Input User Name 
+    input(type="text", name="name")
+    br
+    button Delete

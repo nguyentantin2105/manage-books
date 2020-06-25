@@ -21,9 +21,12 @@ app.set("views", "./views");
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+app.use(express.static('public'));
+
 app.use('/users', userRoute);
 app.use('/books', bookRoute);
 app.use('/transactions', transactionRoute);
+
 
 //console.log(db.get('books').value());
 // listen for requests :)

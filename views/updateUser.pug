@@ -1,11 +1,14 @@
-h1 UPDATE USER
-form(action="/users/update", method="POST")
-  label oldName &nbsp
-    input(type="text", name="name")
-  div
-  br
-  label newName &nbsp
-    input(type="text", name="newname")
-  div
-  br
-  button UPDATE
+extends ./layouts/Main
+
+block content  
+  h1 UPDATE USER
+  form(action="/users/update", method="POST")
+    label oldName &nbsp
+      input(type="text", name="name")
+    div
+    br
+    label newName &nbsp
+      input(type="text", name="newname")
+    div
+    br
+    button UPDATE
