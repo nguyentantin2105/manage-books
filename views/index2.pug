@@ -1,9 +1,12 @@
-h1 ListTransactions
-ul 
-  each transaction in listTransactions
-    li=  'Userid= ' + transaction.userid + ' | ' + 'Bookid= ' + transaction.bookid
-    form(action="/transactions/" + transaction.id + "/complete", method="POST")
-      button isComplete 
-    
-a(href='/transactions/create') Create Transaction
-br
+extends ./layouts/Main
+
+block content
+  h1 ListTransactions
+  ul 
+    each transaction in listTransactions
+      li=  'Userid= ' + transaction.userid + ' | ' + 'Bookid= ' + transaction.bookid
+      form(action="/transactions/" + transaction.id + "/complete", method="POST")
+        button isComplete 
+
+  a(href='/transactions/create') Create Transaction
+  br

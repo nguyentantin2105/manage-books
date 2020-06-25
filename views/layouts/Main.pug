@@ -1,0 +1,15 @@
+html 
+  head
+    title Manage
+    link(rel="shortcut icon", type="image/png", href="https://cdn.glitch.com/99fffa25-47d5-441f-81a0-c56bb7631616%2Flogo.png?v=1592915161826")
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+    style 
+      include ../../public/custom.css
+  body
+    nav(class="navbar navbar-expand-lg navbar-light bg-light d-flex")
+      div(class="collapse navbar-collapse")
+        div(class="navbar-nav")
+          a(class="nav-item nav-link", href="/users") Users
+          a(class="nav-item nav-link", href="/books") Books
+          a(class="nav-item nav-link", href="/transactions") Transactions
+    block content
