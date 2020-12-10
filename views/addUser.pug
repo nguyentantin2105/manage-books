@@ -1,6 +1,10 @@
 extends ./layouts/Main
 
 block content
+
+  if errors
+      .alert.alert-danger= errors
+  
   form(action="/users/add", method="POST")
     label input userName &nbsp
       input(type="text", name="name")

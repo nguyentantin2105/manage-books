@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var validate = require('../validate/user.validate.js');
 
 var controller = require('../controllers/user.controller');
 
@@ -11,7 +12,7 @@ router.get("/update", controller.updateUser);
 
 router.get("/delete", controller.deleteUser);
 
-router.post("/add", controller.postAddUser);
+router.post("/add", validate.postAddUser ,controller.postAddUser);
 
 router.post("/update", controller.postUpdateUser);
 
